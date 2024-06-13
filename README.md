@@ -19,6 +19,7 @@ This is a simple RESTful API for managing a to-do list, built with Golang using 
 - Docker (for containerization)
 
 ## Project Structure
+```
 to-do-list-api/
 ├── Dockerfile
 ├── docker-compose.yml
@@ -44,7 +45,7 @@ to-do-list-api/
 └── utils
 ├── auth.go
 └── hash.go
-
+```
 
 ## Getting Started
 
