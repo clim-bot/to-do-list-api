@@ -20,9 +20,9 @@ func SetupRoutes(router *gin.Engine, db *gorm.DB) {
     taskRoutes := router.Group("/tasks")
     taskRoutes.Use(middleware.AuthMiddleware())
     {
-        taskRoutes.POST("/", taskController.CreateTask)
-        taskRoutes.GET("/", taskController.GetTasks)
-        taskRoutes.PUT("/", taskController.UpdateTask)
-        taskRoutes.DELETE("/", taskController.DeleteTask)
+        taskRoutes.POST("", taskController.CreateTask)
+        taskRoutes.GET("", taskController.GetTasks)
+        taskRoutes.PUT("", taskController.UpdateTask)
+        taskRoutes.DELETE("", taskController.DeleteTask)
     }
 }
