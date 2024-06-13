@@ -69,7 +69,7 @@ to-do-list-api/
 
     Add the following content to the .env file:
     ```sh
-    DSN_URL=postgres://postgres:postgres@db:5432/todo_db?sslmode=disable
+    DSN_URL=postgres://postgres:postgres@db:5432/tododb?sslmode=disable
 
     ```
     The API will be available at http://localhost:8080.
